@@ -1,0 +1,166 @@
+/* default starts here */
+body { 
+	margin: 10px;
+    background-color: #610C04;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+/*nav*/
+nav{
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: crimson;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0 0;
+  flex-wrap: wrap;
+}
+#navLogo{
+    width: 250px;
+    height: 80%;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a#active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 0 0 0;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+    margin-right: 20px;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -200%;
+    background: black;
+    height: 100vh;
+    width: 100%;
+    margin-right: 50%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    margin-top: 0;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 85%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+    display: block;
+    margin: auto;
+    width: 30%;
+    text-align: center;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+/*nav ends here*/
+
+.mainBody {
+    display: block;
+    margin: auto;
+    background-color: #FDEFB2;
+    padding: 30px;
+    border-radius: 10px 10px 10px 10px;
+    width: 70%;
+}
+/* default ends here */
+
+h2{
+  border: solid 2px black;
+  background-color: #E3C565;
+  color: black;
+  padding: 20px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+h3{
+  color: black;
+  margin-right: 30px;
+  margin-top: 0;
+}
+.photos{
+  cursor: pointer;
+  border: solid 2px black;
+  padding: 0px;
+  margin-right: 30px;
+  border-radius: 15px; 
+  width: 80%;
+  margin-top: 0px;
+}
+.genres {  
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+  padding-bottom: 2px;
+  border: solid 6px #E3C565;
+  background-color: #FDEFB2;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+.genres ul li{
+  list-style: none;
+  padding-bottom: 20px;
+}
+a{
+  text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: black;
+}

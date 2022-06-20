@@ -1,0 +1,292 @@
+/* default starts here */
+body { 
+	margin: 10px;
+    background-color: #610C04;
+    font-family: Arial;
+    font-size: 15px;
+}
+/*nav*/
+nav{
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: crimson;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0 0;
+  flex-wrap: wrap;
+}
+#navLogo{
+    width: 250px;
+    height: 80%;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a#active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 0 0 0;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+    margin-right: 20px;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -200%;
+    background: black;
+    height: 100vh;
+    width: 100%;
+    margin-right: 50%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    margin-top: 0;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 85%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+    display: block;
+    margin: auto;
+    width: 30%;
+    text-align: center;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+/*nav ends here*/
+
+.mainBody {
+    display: block;
+    margin: auto;
+    background-color: #FDEFB2;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
+    width: 70%;
+}
+/* default ends here */
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: #E3C565;
+}
+img {
+	width: 100px;
+	height: 100px;
+}
+#devLogo{
+    width: 100px;
+}
+#image1{
+    width: 130px;
+    height: 130px;
+    float: left;
+    margin-right: 10px;
+}
+#aboutRiot{
+    width: 100%;
+    margin-bottom: 40px;
+}
+#supportH1{
+   margin-top: 15px;
+}
+.button {
+    width: 50%;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    text-align: center;
+    font-size: 20px;
+}
+#gridMe {
+    display: grid;
+    /*grid-template-columns: 10% 40% 40% 10%;
+    align-items: center;*/
+    place-items: center;
+}
+.forms{
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  text-align: center;
+}
+#feedback{
+  grid-column: 1;
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  background-color: #E3C565;
+  margin-bottom: 25px;
+  text-align: center;
+  border-radius: 50px;
+  margin-left: 15%;
+}
+#feedback_icon{
+  margin-top: 20px;
+  width: 50%;
+  height: 60%;
+}
+#complaint{
+  grid-column: 2;
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  background-color: #E3C565;
+  margin-bottom: 25px;
+  text-align: center;
+  border-radius: 50px;
+  margin-right: 15%;
+}
+#complaint_icon{
+  margin-top: 20px;
+  width: 50%;
+  height: 60%;
+}
+#feedback_button{
+  display: block;
+  margin: auto;
+  width: 50%;
+  background-color: #FDEFB2;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5vw;
+  padding: 1em 2em;
+  border: solid 2px gray;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#complaint_button{
+  display: block;
+  margin: auto;
+  width: 50%;
+  background-color: #FDEFB2;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5vw;
+  padding: 1em 2em;
+  border: solid 2px gray;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#feedback_button:hover{
+  background-color: gold;
+}
+#complaint_button:hover{
+  background-color: gold;
+}
+.devs{
+    text-decoration: none;
+    color: black
+    
+}
+.devssupport{
+    padding-top: 50px;
+    text-align: center;
+}
+.supportbutton{
+    display: flex;
+}
+ul.devList {
+    text-align: center;
+    list-style-type: none;
+}
+
+@media only screen and (max-width: 800px){
+  .forms{
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+  }
+  #feedback{
+    grid-row: 1;
+    grid-column: 1;
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+  }
+  #complaint{
+    grid-row: 2;
+    grid-column: 1;
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 8px;
+  }
+  #feedback_button{
+    font-size: 1em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #complaint_button{
+    font-size: 1em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #feedback_icon{
+    height: 70%;
+  }
+  #complaint_icon{
+    height: 70%;
+  }
+}

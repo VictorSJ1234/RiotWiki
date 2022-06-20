@@ -1,0 +1,357 @@
+/* default starts here */
+body { 
+	margin: 10px;
+    background-color: #610C04;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+/*nav*/
+nav{
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: crimson;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0 0;
+  flex-wrap: wrap;
+}
+#navLogo{
+    width: 250px;
+    height: 80%;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 0 0 0;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+    margin-right: 20px;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -200%;
+    background: black;
+    height: 100vh;
+    width: 100%;
+    margin-right: 50%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    margin-top: 0;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 85%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+    display: block;
+    margin: auto;
+    width: 30%;
+    text-align: center;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+/*nav ends here*/
+
+.mainBody {
+    display: block;
+    margin: auto;
+    background-color: #FDEFB2;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
+    width: 70%;
+}
+
+/* default ends here */
+
+/* article default */
+table {
+    border: solid 3px #610C04;
+    padding: 10px;
+    border-radius: 4px;
+    float: right;
+    clear: right;
+    margin: 3px;
+}
+
+tr {
+    border: solid 2px #610C04;
+}
+
+tr th {
+    text-align: center;
+}
+
+tr td {
+    text-align: left;
+    padding: 5px;
+}
+
+#quote {
+    text-align: center;
+    font-style: italic;
+}
+p, ul li{
+    line-height: 1.5em;
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+
+}
+ul li a:hover {
+    text-decoration: underline;  
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+.mediaImg {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+.mediaGrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 5px;
+}
+/* article default ends here */
+
+/* Valorant */
+.fullBody {
+    width: 150px;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.weaponsimg {
+    max-width: 60%;
+    background-color: white;
+    display: block;
+    margin: auto;
+}
+.weaponsgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+}
+.characterGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+}
+.characterName {
+    text-align: center;
+}
+/* Valorant ends here */
+
+/*LoL and WildRift start here*/
+
+.gameplayDivCon {
+    text-align: center;
+    float: left;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+.gameplayDivCon2 {
+    text-align: center;
+    float: right;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+.imForAll {
+    width: 200px;
+}
+.cosmeDiv {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.cosmeDivCon {
+    text-align: center;
+}
+.skillDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    border: 3px solid #99905c;
+    padding: 10px;
+    text-align: center;
+}
+.skillDivCon {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid #99905c;
+}
+.skillIm {
+    width: 100px;
+}
+.charImDiv {
+    text-align: center;
+}
+.charIm {
+    width: 300px;
+    text-align: center;
+}
+/*LoL and WildRift end here*/
+
+@media only screen and (max-width: 930px){
+    table {
+    border: solid 3px #610C04;
+    padding: 10px;
+    border-radius: 4px;
+    margin: auto;
+    }
+    .characterGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+    }
+    .mediaGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 5px;
+    }
+    .skillDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    border: 3px solid #99905c;
+    padding: 10px;
+    text-align: center;
+    }
+    .cosmeDiv {
+    display: grid;
+    grid-template-columns: auto auto;
+    }
+    .gameplayDivCon {
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    }
+   .gameplayDivCon2 {
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    }
+}
+@media only screen and (max-width: 820px){
+    table {
+    border: solid 3px #610C04;
+    padding: 10px;
+    border-radius: 4px;
+    margin: auto;
+    }
+    .characterGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5px;
+    }
+    .weaponsgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5px;
+    }
+    .mediaGrid {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 5px;
+    }
+    .skillDiv {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    border: 3px solid #99905c;
+    padding: 10px;
+    text-align: center;
+    }
+    .cosmeDiv {
+    display: grid;
+    grid-template-columns: auto;
+    }
+    .gameplayDivCon {
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    }
+   .gameplayDivCon2 {
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    }
+}

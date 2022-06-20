@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Content</title>
+	<link rel="stylesheet" type="text/css" href="content_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+    <nav>
+		<img src = "media/logo/logoNav.png" id="navLogo">
+		<input type="checkbox" id="click">
+		<label for="click" class="menu-btn">
+		  <i class="fas fa-bars"></i>
+		</label>
+		<ul>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="about.html">About</a></li>
+		  <li><a href="latestNews.html">Latest News</a></li>
+		  <li><a id="active" href="content.html">Content</a></li>
+		  <li><a href="support.html">Support</a></li>
+		</ul>
+	</nav>
+    <br>
+    <div class = "mainBody">
+        <h1>Content</h1>
+        <hr>
+        <p>This section features the game articles in a categorized manner based on their genre.</p>
+       
+        <!--moba-->
+        <div id="moba" class="genres">
+            <h2>Multiplayer Online Battle Arena</h2>
+            <br>
+            <ul>
+                <li>
+                  <img src="media/content/lol.jpg" class="photos" id="lol_photo"><br>
+                  <a href ="leagueOfLegendsWiki.html">
+                    <h3>LEAGUE OF LEGENDS</h3>
+                  </a>
+                </li>
+                <li>
+                  <img src="media/content/wildRift.jpg" class="photos" id="wildRift_photo">
+                  <a href = "wildriftWiki.html">
+                    <h3>LEAGUE OF LEGENDS: WILD RIFT</h3>
+                  </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--fps-->
+        <div id="fps" class="genres">
+          <h2>First-Person Shooter</h2>
+          <br>
+          <ul>
+              <li>
+                <img src="media/content/valorant.jpg" class="photos" id="valo_photo"><br>
+                <a href="valorantWiki.html">
+                   <h3>VALORANT</h3>
+                </a>
+              </li>
+          </ul>
+      </div>
+
+      <!--Simulation-->
+      <div id="simulation" class="genres">
+          <h2>Simulation</h2>
+          <br>
+          <ul>
+              <li>
+                <img src="media/content/esportsManager.jpg" class="photos" id="manager_photo"><br>
+                <a href="lolEsportsWiki.html">
+                   <h3>LoL ESPORTS MANAGER</h3>
+                </a>
+              </li>
+          </ul>
+      </div>  
+
+      <!--Auto battler-->
+      <div id="autoBattler" class="genres">
+          <h2>Auto Battler</h2>
+          <br>
+          <ul>
+              <li>
+                <img src="media/content/teamfightTactics.jpg" class="photos" id="teamfight_photo"><br>
+                <a href = "teamfightTacticsWiki.html">
+                  <h3>TEAMFIGHT TACTICS</h3>
+                </a>
+              </li>
+          </ul>
+      </div>
+
+      <!--Digital collectible card game-->
+      <div id="cardGame" class="genres">
+          <h2>Digital Collectible Card Game</h2>
+          <br>
+          <ul>
+              <li>
+                <img src="media/content/runeterra.jpg" class="photos" id="teamfight_photo"><br>
+                <a href = "legendOfRuneterraWiki.html">
+                   <h3>LEGENDS OF RUNETERRA</h3>
+                </a>
+              </li>
+          </ul>
+      </div>
+        <br>
+        <br>
+        <hr>
+        <footer>
+           <p>&copy; All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

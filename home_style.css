@@ -1,0 +1,216 @@
+/* default starts here */
+body { 
+	margin: 10px;
+    background-color: #610C04;
+    font-family: Arial;
+    font-size: 15px;
+}
+/*nav*/
+nav{
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: crimson;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0 0;
+  flex-wrap: wrap;
+}
+#navLogo{
+    width: 250px;
+    height: 80%;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a#active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 0 0 0;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+    margin-right: 20px;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -200%;
+    background: black;
+    height: 100vh;
+    width: 100%;
+    margin-right: 50%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    margin-top: 0;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 85%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+    display: block;
+    margin: auto;
+    width: 30%;
+    text-align: center;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+/*nav ends here*/
+
+.mainBody {
+    display: block;
+    margin: auto;
+    background-color: #FDEFB2;
+    padding: 30px;
+    border-radius: 10px 10px 10px 10px;
+    width: 70%;
+}
+/* default ends here */
+
+.divGrid {
+    border: solid 5px #b89f4e;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+
+#introLogo{
+    width: 400px;
+}
+#devLogo {
+    width: 300px;
+}
+#divIntro {
+    text-align: center;
+}
+.divCon {
+    border: solid 5px #b89f4e;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+.contentImg {
+    width: 75%;
+    height: auto;
+    
+    margin: 5px;
+}
+.newsImg {
+    width: 40%;
+    height: 40%;
+    margin: 5px;
+}
+.divLinkMe {
+    grid-column: 1 /span 2;
+    text-align: left;
+    padding: 10px;
+}
+.linkMe {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.linkMe:hover {
+    text-decoration: underline;
+}
+.divTitle {
+    grid-column: 1 /span 2;
+    text-align: center;
+    border: solid 3px #070707;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #E3C565;
+}
+#divRiot {
+    background-image: linear-gradient(to right, rgba(253, 239, 178, 0.4), rgba(253, 239, 178, 1)), url('media/latestNews/riotBG.png');
+    background-size: cover;
+}
+#divWild {
+    background-image: linear-gradient(to right, rgba(253, 239, 178, 0.4), rgba(253, 239, 178, 1)), url('media/latestNews/wildRiftBG.png');
+    background-size: cover;
+}
+#divLol {
+    background-image: linear-gradient(to right, rgba(253, 239, 178, 0.4), rgba(253, 239, 178, 1)), url('media/latestNews/lolBG.png');
+    background-size: cover;
+}
+/**/
+@media only screen and (max-width: 820px){
+    .divGrid {
+      border: solid 5px #b89f4e;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 20px;
+      display: grid;
+      grid-template-columns: auto;
+      text-align: center;
+    }
+    .divTitle {
+      grid-column: 1;
+    }
+    .divLinkMe {
+      grid-column: 1;
+      text-align: left;
+      padding: 10px;
+    }
+    #introLogo{
+      width: 300px;
+    }
+}
+
